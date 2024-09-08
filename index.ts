@@ -77,7 +77,7 @@ function isWrappedInCommand(text, url) {
 }
 
 async function getFormatSettings() {
-    const { preferredFormat } = await logseq.App.getUserConfigs();
+    const preferredFormat = 'org';
     if (!preferredFormat) {
         return null;
     }
